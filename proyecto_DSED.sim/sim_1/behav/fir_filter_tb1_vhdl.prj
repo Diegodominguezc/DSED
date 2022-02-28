@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../proyecto_DSED.srcs/sources_1/new/package_dsed.vhd"
+vhdl xil_defaultlib  "../../../proyecto_DSED.srcs/sources_1/new/control_FIR.vhd"
+vhdl xil_defaultlib  "../../../proyecto_DSED.srcs/sources_1/new/datapath_FIR.vhd"
+vhdl xil_defaultlib  "../../../proyecto_DSED.srcs/sources_1/new/fir_filter.vhd"
+vhdl xil_defaultlib  "../../../proyecto_DSED.srcs/sources_1/new/mux1_2.vhd"
+vhdl xil_defaultlib  "../../../proyecto_DSED.srcs/sources_1/new/mux3.vhd"
+vhdl xil_defaultlib  "../../../proyecto_DSED.srcs/sim_1/new/fir_filter_tb1.vhd"
+
+# Do not sort compile order
+nosort

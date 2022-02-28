@@ -1,0 +1,594 @@
+
+*** Running vivado
+    with args -log dsed_audio.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dsed_audio.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source dsed_audio.tcl -notrace
+Command: synth_design -top dsed_audio -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8860 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 312.000 ; gain = 74.801
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dsed_audio' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/dsed_audio.vhd:59]
+INFO: [Synth 8-3491] module 'clk_12M' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/realtime/clk_12M_stub.vhdl:5' bound to instance 'DUT1' of component 'clk_12M' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/dsed_audio.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'clk_12M' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/realtime/clk_12M_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'control_blk3' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_blk3.vhd:36' bound to instance 'DUT2' of component 'control_blk3' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/dsed_audio.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'control_blk3' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_blk3.vhd:67]
+WARNING: [Synth 8-6014] Unused sequential element record_enable_next_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_blk3.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'control_blk3' (1#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_blk3.vhd:67]
+INFO: [Synth 8-3491] module 'audio_interface' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/audio_interface.vhd:37' bound to instance 'DUT3' of component 'audio_interface' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/dsed_audio.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'audio_interface' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/audio_interface.vhd:61]
+INFO: [Synth 8-3491] module 'en_4_cycles' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/en_4_cycles.vhd:36' bound to instance 'DUT1' of component 'en_4_cycles' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/audio_interface.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'en_4_cycles' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/en_4_cycles.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'en_4_cycles' (2#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/en_4_cycles.vhd:45]
+INFO: [Synth 8-3491] module 'FSMD_microphone' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/FSMD_microphone.vhd:36' bound to instance 'DUT2' of component 'FSMD_microphone' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/audio_interface.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'FSMD_microphone' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/FSMD_microphone.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'FSMD_microphone' (3#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/FSMD_microphone.vhd:45]
+INFO: [Synth 8-3491] module 'pwm' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/pwm.vhd:36' bound to instance 'DUT3' of component 'pwm' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/audio_interface.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'pwm' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/pwm.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'pwm' (4#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/pwm.vhd:45]
+INFO: [Synth 8-3491] module 'audio_visualizer' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/audio_visualizer.vhd:37' bound to instance 'DUT4' of component 'audio_visualizer' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/audio_interface.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'audio_visualizer' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/audio_visualizer.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'audio_visualizer' (5#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/audio_visualizer.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'audio_interface' (6#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/audio_interface.vhd:61]
+INFO: [Synth 8-3491] module 'fir_filter' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/fir_filter.vhd:37' bound to instance 'DUT4' of component 'fir_filter' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/dsed_audio.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'fir_filter' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/fir_filter.vhd:47]
+INFO: [Synth 8-3491] module 'control_FIR' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_FIR.vhd:36' bound to instance 'DUT1' of component 'control_FIR' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/fir_filter.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'control_FIR' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_FIR.vhd:45]
+INFO: [Synth 8-226] default block is never used [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_FIR.vhd:63]
+INFO: [Synth 8-226] default block is never used [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_FIR.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'control_FIR' (7#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_FIR.vhd:45]
+INFO: [Synth 8-3491] module 'datapath_FIR' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/datapath_FIR.vhd:36' bound to instance 'DUT2' of component 'datapath_FIR' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/fir_filter.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'datapath_FIR' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/datapath_FIR.vhd:47]
+INFO: [Synth 8-3491] module 'mux1_2' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/mux1_2.vhd:37' bound to instance 'DUT1' of component 'mux1_2' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/datapath_FIR.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'mux1_2' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/mux1_2.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'mux1_2' (8#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/mux1_2.vhd:47]
+INFO: [Synth 8-3491] module 'mux1_2' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/mux1_2.vhd:37' bound to instance 'DUT2' of component 'mux1_2' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/datapath_FIR.vhd:87]
+INFO: [Synth 8-3491] module 'mux3' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/mux3.vhd:36' bound to instance 'DUT3' of component 'mux3' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/datapath_FIR.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'mux3' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/mux3.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'mux3' (9#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/mux3.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element C3_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/datapath_FIR.vhd:81]
+WARNING: [Synth 8-6014] Unused sequential element C4_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/datapath_FIR.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'datapath_FIR' (10#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/datapath_FIR.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'fir_filter' (11#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/fir_filter.vhd:47]
+INFO: [Synth 8-3491] module 'mem' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/mem.vhd:37' bound to instance 'DUT5' of component 'mem' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/dsed_audio.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'mem' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/mem.vhd:46]
+INFO: [Synth 8-3491] module 'blk_ram_mem' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/realtime/blk_ram_mem_stub.vhdl:5' bound to instance 'DUT1' of component 'blk_ram_mem' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/mem.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'blk_ram_mem' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/realtime/blk_ram_mem_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'mem' (12#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/mem.vhd:46]
+INFO: [Synth 8-3491] module 'Time_Rec' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/Time_Rec.vhd:36' bound to instance 'DUT6' of component 'Time_Rec' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/dsed_audio.vhd:228]
+INFO: [Synth 8-638] synthesizing module 'Time_Rec' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/Time_Rec.vhd:47]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'U1' of component 'c_counter_binary_1' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/Time_Rec.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_1' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/realtime/c_counter_binary_1_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'c_counter_binary_0' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/realtime/c_counter_binary_0_stub.vhdl:5' bound to instance 'U2' of component 'c_counter_binary_0' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/Time_Rec.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/realtime/c_counter_binary_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'c_counter_binary_2' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/realtime/c_counter_binary_2_stub.vhdl:5' bound to instance 'U3' of component 'c_counter_binary_2' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/Time_Rec.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_2' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/realtime/c_counter_binary_2_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'c_counter_binary_3' declared at 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/realtime/c_counter_binary_3_stub.vhdl:5' bound to instance 'U4' of component 'c_counter_binary_3' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/Time_Rec.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_3' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/realtime/c_counter_binary_3_stub.vhdl:16]
+INFO: [Synth 8-256] done synthesizing module 'Time_Rec' (13#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/Time_Rec.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'dsed_audio' (14#1) [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/dsed_audio.vhd:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 352.328 ; gain = 115.129
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 352.328 ; gain = 115.129
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp13/c_counter_binary_0_in_context.xdc] for cell 'DUT6/U4'
+Finished Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp13/c_counter_binary_0_in_context.xdc] for cell 'DUT6/U4'
+Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp15/blk_ram_mem_in_context.xdc] for cell 'DUT5/DUT1'
+Finished Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp15/blk_ram_mem_in_context.xdc] for cell 'DUT5/DUT1'
+Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp17/clk_12M_in_context.xdc] for cell 'DUT1'
+Finished Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp17/clk_12M_in_context.xdc] for cell 'DUT1'
+Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp19/c_counter_binary_0_in_context.xdc] for cell 'DUT6/U2'
+Finished Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp19/c_counter_binary_0_in_context.xdc] for cell 'DUT6/U2'
+Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp21/c_counter_binary_2_in_context.xdc] for cell 'DUT6/U3'
+Finished Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp21/c_counter_binary_2_in_context.xdc] for cell 'DUT6/U3'
+Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp23/c_counter_binary_1_in_context.xdc] for cell 'DUT6/U1'
+Finished Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp23/c_counter_binary_1_in_context.xdc] for cell 'DUT6/U1'
+Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/constrs_1/imports/Archivos sesión 4-20211011/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/constrs_1/imports/Archivos sesión 4-20211011/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/constrs_1/imports/Archivos sesión 4-20211011/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dsed_audio_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dsed_audio_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 669.320 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'DUT6/U1' at clock pin 'CLK' is different from the actual clock period '83.333', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'DUT6/U2' at clock pin 'CLK' is different from the actual clock period '83.333', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'DUT6/U3' at clock pin 'CLK' is different from the actual clock period '83.333', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'DUT6/U4' at clock pin 'CLK' is different from the actual clock period '83.333', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 669.320 ; gain = 432.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 669.320 ; gain = 432.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100Mhz. (constraint file  C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp17/clk_12M_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100Mhz. (constraint file  C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/.Xil/Vivado-14992-DESKTOP-FUI44JR/dcp17/clk_12M_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for DUT1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DUT5/DUT1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DUT6/U1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DUT6/U2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DUT6/U3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DUT6/U4. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 669.320 ; gain = 432.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'record_enable_reg_reg' into 'wea_reg_reg[0:0]' [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_blk3.vhd:98]
+WARNING: [Synth 8-6014] Unused sequential element record_enable_reg_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_blk3.vhd:98]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'control_blk3'
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_blk3.vhd:87]
+INFO: [Synth 8-5546] ROM "addra_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "first_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "en_4_cycles" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "primer_ciclo_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sample_out_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control_FIR'
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_FIR.vhd:55]
+INFO: [Synth 8-5544] ROM "sample_out_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "control3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "control1_2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "segment3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "lock_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tri_color_en_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "segment3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "lock_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tri_color_en_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tri_color" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "segment1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "segment2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "segmentR2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "segmentR1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "segmentR0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_blk3.vhd:87]
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_blk3.vhd:87]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+               recording |                              001 |                              001
+                play_all |                              010 |                              011
+          play_backwards |                              011 |                              100
+                 play_lp |                              100 |                              101
+                 play_hp |                              101 |                              110
+                  delete |                              110 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'control_blk3'
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_blk3.vhd:87]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_FIR.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_FIR.vhd:55]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                      s0 |                              001 |                              001
+                      s1 |                              010 |                              010
+                      s2 |                              011 |                              011
+                      s3 |                              100 |                              100
+                      s4 |                              101 |                              101
+                      s5 |                              110 |                              110
+                      s6 |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'control_FIR'
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/control_FIR.vhd:55]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 669.320 ; gain = 432.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 4     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 5     
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 13    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   7 Input     19 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   4 Input      9 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 9     
+	   4 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  27 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   7 Input      1 Bit        Muxes := 15    
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module control_blk3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 4     
++---Registers : 
+	               19 Bit    Registers := 5     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   7 Input     19 Bit        Muxes := 5     
+	   7 Input      8 Bit        Muxes := 1     
+	  27 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   7 Input      1 Bit        Muxes := 15    
+Module en_4_cycles 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module FSMD_microphone 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module audio_visualizer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module control_FIR 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module datapath_FIR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module Time_Rec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "DUT2/addra_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DUT2/first_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DUT3/DUT2/state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DUT3/DUT2/sample_out_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DUT6/tri_color_en_next" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element DUT4/DUT2/R3_reg_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/datapath_FIR.vhd:99]
+WARNING: [Synth 8-6014] Unused sequential element DUT6/counter_max_reg_reg was removed.  [C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.srcs/sources_1/new/Time_Rec.vhd:164]
+WARNING: [Synth 8-3917] design dsed_audio has port micro_LR driven by constant 1
+WARNING: [Synth 8-3917] design dsed_audio has port jack_sd driven by constant 1
+WARNING: [Synth 8-3917] design dsed_audio has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design dsed_audio has port RGB[1] driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (DUT4/DUT2/R1_reg_reg[15]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (DUT4/DUT2/R2_reg_reg[15]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (DUT4/DUT2/R3_reg_reg[15]) is unused and will be removed from module dsed_audio.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 669.320 ; gain = 432.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DUT1/clk_out1' to pin 'DUT1/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 669.320 ; gain = 432.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 669.320 ; gain = 432.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 669.336 ; gain = 432.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 669.336 ; gain = 432.137
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 669.336 ; gain = 432.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 669.336 ; gain = 432.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 669.336 ; gain = 432.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 669.336 ; gain = 432.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 669.336 ; gain = 432.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |clk_12M            |         1|
+|2     |blk_ram_mem        |         1|
+|3     |c_counter_binary_1 |         1|
+|4     |c_counter_binary_0 |         1|
+|5     |c_counter_binary_2 |         1|
+|6     |c_counter_binary_3 |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |blk_ram_mem_bbox        |     1|
+|2     |c_counter_binary_0_bbox |     1|
+|3     |c_counter_binary_1_bbox |     1|
+|4     |c_counter_binary_2_bbox |     1|
+|5     |c_counter_binary_3_bbox |     1|
+|6     |clk_12M_bbox            |     1|
+|7     |CARRY4                  |    45|
+|8     |LUT1                    |    95|
+|9     |LUT2                    |    82|
+|10    |LUT3                    |    82|
+|11    |LUT4                    |   133|
+|12    |LUT5                    |    75|
+|13    |LUT6                    |   151|
+|14    |FDCE                    |   300|
+|15    |FDPE                    |     2|
+|16    |FDRE                    |    12|
+|17    |IBUF                    |     7|
+|18    |OBUF                    |    31|
++------+------------------------+------+
+
+Report Instance Areas: 
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |  1050|
+|2     |  DUT2   |control_blk3     |   419|
+|3     |  DUT3   |audio_interface  |   191|
+|4     |    DUT1 |en_4_cycles      |    10|
+|5     |    DUT2 |FSMD_microphone  |    98|
+|6     |    DUT3 |pwm              |    30|
+|7     |    DUT4 |audio_visualizer |    53|
+|8     |  DUT4   |fir_filter       |   243|
+|9     |    DUT1 |control_FIR      |    89|
+|10    |    DUT2 |datapath_FIR     |   154|
+|11    |  DUT5   |mem              |     9|
+|12    |  DUT6   |Time_Rec         |   149|
++------+---------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 669.336 ; gain = 432.137
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 669.336 ; gain = 115.145
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 669.336 ; gain = 432.137
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+109 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 669.336 ; gain = 441.922
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dodec/Desktop/UPM/Cuarto/DSED/DSED-Group12/proyecto_DSED/proyecto_DSED.runs/synth_1/dsed_audio.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 669.336 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 29 20:19:13 2022...

@@ -1,0 +1,90 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sat Jan 29 20:20:09 2022
+| Host         : DESKTOP-FUI44JR running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file dsed_audio_control_sets_placed.rpt
+| Design       : dsed_audio
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    23 |
+| Unused register locations in slices containing registers |    70 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              18 |           11 |
+| No           | No                    | Yes                    |              73 |           29 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             229 |           80 |
+| Yes          | Yes                   | No                     |              34 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+---------------------------------------+-----------------------------------------------------------------+------------------+----------------+
+|     Clock Signal    |             Enable Signal             |                         Set/Reset Signal                        | Slice Load Count | Bel Load Count |
++---------------------+---------------------------------------+-----------------------------------------------------------------+------------------+----------------+
+|  DUT1/inst/clk_out1 | DUT6/U3_i_1_n_0                       | DUT6/U3/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0 |                1 |              3 |
+|  DUT1/inst/clk_out1 | DUT6/CE4_out                          | DUT6/U4/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0 |                1 |              4 |
+|  DUT1/inst/clk_out1 | DUT3/DUT2/counter_max_reg_reg[0]_0[0] | DUT6/U2/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0 |                1 |              4 |
+|  DUT1/inst/clk_out1 | DUT3/DUT2/sample_out_ready_reg        | reset_IBUF                                                      |                1 |              8 |
+|  DUT1/inst/clk_out1 | DUT3/DUT2/dato1_reg_1                 | reset_IBUF                                                      |                2 |              8 |
+|  DUT1/inst/clk_out1 | DUT3/DUT2/dato2_reg_0                 | reset_IBUF                                                      |                2 |              8 |
+|  DUT1/inst/clk_out1 | DUT3/DUT1/E[0]                        | reset_IBUF                                                      |                3 |              8 |
+|  DUT1/inst/clk_out1 | DUT2/record_enable_next               | reset_IBUF                                                      |                5 |              8 |
+|  DUT1/inst/clk_out1 | DUT2/sample_in_fir_next               | reset_IBUF                                                      |                5 |              8 |
+|  DUT1/inst/clk_out1 | DUT2/sample_in_reg[7]_i_1_n_0         | reset_IBUF                                                      |                3 |              8 |
+|  DUT1/inst/clk_out1 | DUT3/DUT2/counter_max_reg_reg[0]_0[0] | DUT6/SCLR                                                       |                3 |              9 |
+|  DUT1/inst/clk_out1 | DUT2/buf_reg_reg[0]                   | reset_IBUF                                                      |                4 |             10 |
+|  DUT1/inst/clk_out1 |                                       | DUT6/SCLR                                                       |                4 |             11 |
+|  DUT1/inst/clk_out1 | DUT3/DUT1/count_reg0                  | DUT3/DUT1/count_reg_reg[11]_0                                   |                3 |             11 |
+|  DUT1/inst/clk_out1 | DUT3/DUT1/cuenta_reg_reg[8][0]        | reset_IBUF                                                      |                4 |             11 |
+|  DUT1/inst/clk_out1 | DUT3/DUT2/CE                          | DUT6/U1/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0 |                3 |             12 |
+|  DUT1/inst/clk_out1 |                                       |                                                                 |               11 |             18 |
+|  DUT1/inst/clk_out1 | DUT2/addra_reg[18]_i_1_n_0            | reset_IBUF                                                      |                8 |             19 |
+|  DUT1/inst/clk_out1 | DUT2/mem_back_reg[18]_i_1_n_0         | reset_IBUF                                                      |                7 |             19 |
+|  DUT1/inst/clk_out1 | DUT2/mem_play_reg[18]_i_1_n_0         | reset_IBUF                                                      |                6 |             19 |
+|  DUT1/inst/clk_out1 | DUT2/mem_dir_reg[18]_i_1_n_0          | reset_IBUF                                                      |               13 |             38 |
+|  DUT1/inst/clk_out1 | DUT2/E[0]                             | reset_IBUF                                                      |               14 |             48 |
+|  DUT1/inst/clk_out1 |                                       | reset_IBUF                                                      |               25 |             62 |
++---------------------+---------------------------------------+-----------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 3      |                     1 |
+| 4      |                     2 |
+| 8      |                     7 |
+| 9      |                     1 |
+| 10     |                     1 |
+| 11     |                     3 |
+| 12     |                     1 |
+| 16+    |                     7 |
++--------+-----------------------+
+
+
